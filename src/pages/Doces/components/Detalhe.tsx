@@ -6,10 +6,22 @@ import uva from "../../../../assets/uva.jpg";
 import morango from "../../../../assets/morango.jpg"
 import maca from "../../../../assets/maca.jpg"
 
-export default function Detalhe () {
+type Props = {
+  nomeDoceria: string;
+  descricao: string;
+  bala: string;
+  preco: string;
+}
+
+export default function Detalhe ({
+
+  nomeDoceria,
+  descricao,
+  preco,
+}: Props) {
     return<>
 
-<Text style={estilos.nomeDoceria}>Doces</Text>
+<Text style={estilos.nomeDoceria}>{nomeDoceria}</Text>
 
 <View style={estilos.bala}>
   <Image style={estilos.imagem} source={bala} />
