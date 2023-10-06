@@ -1,64 +1,84 @@
 import React from "react";
 import { StyleSheet, Image, Dimensions, Text, View } from "react-native";
 
-import bala from "../../../../assets/bala.jpg";
-import uva from "../../../../assets/uva.jpg";
-import morango from "../../../../assets/morango.jpg"
-import maca from "../../../../assets/maca.jpg"
+import balas from "../../../../assets/bala.jpg";
+import uvas from "../../../../assets/uva.jpg";
+import morangos from "../../../../assets/morango.jpg"
+import macas from "../../../../assets/maca.jpg"
 
 type Props = {
   nomeDoceria: string;
-  descricao: string;
   bala: string;
-  preco: string;
+  descricaobala: string;
+  precobala: string;
+  maca: string;
+  descricaomaca: string;
+  precomaca: string;
+  morango: string;
+  descricaomorango: string;
+  precomorango: string;
+  uva: string;
+  descricaouva: string;
+  precouva: string;
 }
 
 export default function Detalhe ({
 
   nomeDoceria,
-  descricao,
-  preco,
+  bala,
+  descricaobala,
+  precobala,
+  maca,
+  descricaomaca,
+  precomaca,
+  morango,
+  descricaomorango,
+  precomorango,
+  uva,
+  descricaouva,
+  precouva
+
 }: Props) {
     return<>
 
 <Text style={estilos.nomeDoceria}>{nomeDoceria}</Text>
 
 <View style={estilos.bala}>
-  <Image style={estilos.imagem} source={bala} />
-  <Text style={estilos.nome}>Bala Baiana</Text>
+  <Image style={estilos.imagem} source={balas} />
+  <Text style={estilos.bala}>{bala}</Text>
 </View>
 
-<Text style={estilos.descricao}>Beijinho passado no caramelo.</Text>
+<Text style={estilos.descricao}>{descricaobala}</Text>
 
-<Text style={estilos.preco}>R$ 10,00 {'\n'}</Text>
+<Text style={estilos.preco}>{precobala}{'\n'}</Text>
 
 
 <View style={estilos.uva}>
-  <Image style={estilos.imagem} source={uva} />
-  <Text style={estilos.nome}>Surpresa de Uva</Text>
+  <Image style={estilos.imagem} source={uvas} />
+  <Text style={estilos.uva}>{uva}</Text>
 </View>
 
-<Text style={estilos.descricao}>Brigadeiro de leite ninho recheado com uva.</Text>
+<Text style={estilos.descricao}>{descricaouva}</Text>
 
-<Text style={estilos.preco}>R$ 10,00</Text>
+<Text style={estilos.preco}>{precouva}</Text>
 
 <View style={estilos.morango}>
-  <Image style={estilos.imagem} source={morango} />
-  <Text style={estilos.nome}>Coxinha de morango</Text>
+  <Image style={estilos.imagem} source={morangos} />
+  <Text style={estilos.morango}>{morango}</Text>
 </View>
 
-<Text style={estilos.descricao}>Brigadeiro ao leite recheado com morango inteiro.</Text>
+<Text style={estilos.descricao}>{descricaomorango}</Text>
 
-<Text style={estilos.preco}>R$ 4,50</Text>
+<Text style={estilos.preco}>{precomorango}</Text>
 
 <View style={estilos.maca}>
-  <Image style={estilos.imagem} source={maca} />
-  <Text style={estilos.nome}>Maçã do amor</Text>
+  <Image style={estilos.imagem} source={macas} />
+  <Text style={estilos.maca}>{maca}</Text>
 </View>
 
-<Text style={estilos.descricao}>Maçã com uma calda de caramelo.</Text>
+<Text style={estilos.descricao}>{descricaomaca}</Text>
 
-<Text style={estilos.preco}>R$ 4,50</Text>
+<Text style={estilos.preco}>{precomaca}</Text>
     </>
 }
 

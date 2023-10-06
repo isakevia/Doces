@@ -9,11 +9,20 @@ const doce = {
     },
     detalhes: {
         nomeDoceria: "Kevia Candies",
-        descricao: "Doces feitos com produtos de qualidade e deliciosos.",
-        bala: "bala baiana",
-        preco: "R$ 10,00",
-        
+        bala: "Bala baiana",
+        descricaobala: "Beijinho passado no caramelo.",
+        precobala: "R$10,00",
+        maca: "Maçã do amor",
+        descricaomaca: "Maçã com uma calda de caramelo.",
+        precomaca: "R$5,00",
+        morango: "Coxinha de brigadeiro com morango",
+        descricaomorango: "Coxinha de brigadeiro recheada com morango.",
+        precomorango: "R$4,50",
+        uva: "Surpresa de uva",
+        descricaouva: "Brigadeiro de leite ninho recheado com uva verde.",
+        precouva: "R$10,00"
     },
+   
     itens: {
       titulo: "Itens do Carrinho",
       lista: [
